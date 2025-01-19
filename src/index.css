@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 0, 0%, 100%;
+    --secondary: 0, 0%, 85%;
+    --accent: 153, 71%, 59%;
+    --background: 0, 0%, 8%;
+    --secondarybackground: 0, 0%, 14%;
+  }
+  body {
+    font-family: 'Regular', sans-serif;
+    background-color: hsl(var(--background));
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded;
+  }
+}
+
+@layer utilities {
+  .text-accent {
+    color: hsl(var(--accent));
+  }
+}
+
+@font-face {
+  font-family: 'Regular';
+  src: url('/fonts/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bold';
+  src: url('/fonts/static/SpaceGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: url('/fonts/static/SpaceGrotesk-Medium.ttf') format('truetype');
+  font-weight: 600;
+}
