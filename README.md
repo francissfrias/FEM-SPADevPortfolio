@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 # React + TypeScript + Vite
 
@@ -50,9 +49,3 @@ export default tseslint.config({
   },
 });
 ```
-
-=======
-
-# FEM-SPADevPortfolio
-
-> > > > > > > 595e39b (Initial commit)
