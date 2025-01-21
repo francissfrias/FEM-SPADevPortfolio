@@ -35,6 +35,20 @@ export default {
             lineHeight: '1.75rem',
           },
         ],
+        skillsTitle: [
+          '2rem',
+          {
+            lineHeight: '2.5rem',
+            letterSpacing: '-0.063rem',
+          },
+        ],
+        skillsDescription: [
+          '1rem',
+          {
+            lineHeight: '1.625rem',
+            letterSpacing: '0',
+          },
+        ],
       },
       colors: {
         primary: {
@@ -51,6 +65,9 @@ export default {
         },
         secondaryBackground: {
           DEFAULT: 'hsl(var(--secondary-background))',
+        },
+        error: {
+          DEFAULT: 'hsl(var(--error))',
         },
       },
     },

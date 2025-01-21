@@ -9,6 +9,7 @@
     --accent: 153, 71%, 59%;
     --background: 0, 0%, 8%;
     --secondarybackground: 0, 0%, 14%;
+    --error: 7, 100%, 68%;
   }
   body {
     font-family: 'Regular', sans-serif;
@@ -16,7 +17,7 @@
   }
 }
 
-@layer components {
+/* @layer components {
   .btn-blue {
     @apply bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded;
   }
@@ -26,7 +27,7 @@
   .text-accent {
     color: hsl(var(--accent));
   }
-}
+} */
 
 @font-face {
   font-family: 'Regular';
