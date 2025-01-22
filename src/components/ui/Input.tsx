@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { cn } from '../helper/utils';
+import { cn } from '../../helper/utils';
 
 const Input = React.forwardRef<
   HTMLInputElement,

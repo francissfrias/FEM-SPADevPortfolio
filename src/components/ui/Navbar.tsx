@@ -1,4 +1,4 @@
-import { cn } from '../helper/utils';
+import { cn } from '../../helper/utils';
 import frontendmentoricon from '/public/images/icon-frontend-mentor.svg';
 import githubicon from '/public/images/icon-github.svg';
 import linkedinicon from '/public/images/icon-linkedin.svg';

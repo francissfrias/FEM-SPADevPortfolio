@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import { cn } from '../helper/utils';
+import { cn } from '../../helper/utils';
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
