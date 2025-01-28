@@ -64,7 +64,7 @@ export default {
           DEFAULT: 'hsl(var(--background))',
         },
         secondaryBackground: {
-          DEFAULT: 'hsl(var(--secondary-background))',
+          DEFAULT: 'hsl(var(--secondarybackground))',
         },
         error: {
           DEFAULT: 'hsl(var(--error))',
@@ -73,12 +73,16 @@ export default {
     },
   },
   plugins: [
-    // ({ addComponents }) => {
-    //   addComponents({
-    //     '.test-color-red': {
-    //       '@apply text-red-900': {},
-    //     },
-    //   });
-    // },
+    ({ addUtilities }) => {
+      addUtilities({
+        '.no-scrollbar': {
+          scrollbarWidth: 'none',
+          '-ms-overflow-style': 'none',
+          '&::-webkit-scrollbar': {
+            display: 'none',
+          },
+        },
+      });
+    },
   ],
 };

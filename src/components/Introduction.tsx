@@ -1,4 +1,4 @@
-import { Button } from './ui/Button';
+import { ContactButton } from './shared/ContactMeButton';
 import mobileProfilePicture from '/images/image-profile-mobile.webp';
 import circlePattern from '/images/pattern-circle.svg';
 import ringpattern from '/images/pattern-rings.svg';
@@ -31,7 +31,7 @@ const Introduction = () => {
           Based in the UK, I’m a front-end developer passionate about building
           accessible web apps that users love.
         </p>
-        <Button>Contact Me</Button>
+        <ContactButton />
       </div>
     </>
   );
