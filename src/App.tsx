@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import { Button } from './components/ui/Button';
 import { Input } from './components/ui/Input';
+import Navbar from './components/ui/Navbar';
 
 const App = () => {
   return (
@@ -31,14 +32,8 @@ const App = () => {
           className='min-h-[107px] border-b-2 border-white w-full bg-transparent p-2 uppercase placeholder:uppercase placeholder:pb-20 placeholder:border-red-300 placeholder:border-2 placeholder:tracking-[-0.22px] placeholder:leading-[26px] placeholder:text-[16px] placeholder:opacity-50 placeholder:text-secondary placeholder:font-medium  ring-0 focus:ring-0 focus:outline-none focus:border-accent focus:border-b-2 text-primary text-[16px] leading-[26px] font-medium required:border-b-2 required:border-error disabled:border-b-2 disabled:border-error no-scrollbar'
         />
         <Button className='w-fit block ml-auto '>Send Message</Button>
-        <div className='w-full border-b-2 border-primary mt-[68px]' />
-        <div className='flex justify-between items-center'>
-          <p>© 2021 Portfolio. All rights reserved.</p>
-          <div className='flex gap-4'>
-            <i className='fab fa-facebook-f' />
-            <i className='fab fa-twitter' />
-            <i className='fab fa-instagram' />
-          </div>
+        <div className='w-full border-t-2 border-primary mt-[68px] pt-9'>
+          <Navbar />
         </div>
       </footer>
     </div>
