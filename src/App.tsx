@@ -1,3 +1,4 @@
+import ringpattern from '../public/images/pattern-rings.svg';
 import Header from './components/Header';
 import Introduction from './components/Introduction';
 import Projects from './components/Projects';
@@ -17,7 +18,11 @@ const App = () => {
           <Projects />
         </div>
       </body>
-      <footer className='bottom-0 w-full text-center py-[60px] bg-[#242424] text-primary flex flex-col gap-5 px-4'>
+      <footer className='bottom-0 w-full text-center py-[60px] bg-[#242424] text-primary flex flex-col gap-5 px-4 relative'>
+        <img
+          className='absolute bottom-0 left-0 z-0 -translate-x-[11.75rem] -translate-y-[315px]  '
+          src={ringpattern}
+        />
         <h1 className='text-primary text-center text-[40px] leading-10 traking-[-1.14px] font-bold'>
           Contact
         </h1>
