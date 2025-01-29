@@ -1,13 +1,21 @@
+import useMediaQuery from '../hooks/useMediaQuery';
 import { ContactButton } from './shared/ContactMeButton';
 import mobileProfilePicture from '/images/image-profile-mobile.webp';
 import circlePattern from '/images/pattern-circle.svg';
 import ringpattern from '/images/pattern-rings.svg';
 
 const Introduction = () => {
+  const { isMobile, isTablet, isLaptop, isDesktop } = useMediaQuery();
+
+  console.log(isMobile, 'isMobile');
+  console.log(isTablet, 'isTablet');
+  console.log(isLaptop, 'isLaptop');
+  console.log(isDesktop, 'isDesktop');
+
   return (
     <>
       <img
-        className='absolute top-0 left-0 z-0 -translate-x-[11.75rem] '
+        className='absolute top-0 left-0 z-0 -translate-x-[11.75rem] md:-translate-x-[300px] '
         src={ringpattern}
       />
       <img
