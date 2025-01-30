@@ -64,12 +64,12 @@ const Projects = () => {
   return (
     <div className='w-full flex flex-col gap-10'>
       <div className='flex justify-between items-center'>
-        <h1 className='text-primary text-[40px] leading-10 tracking-[-1.14px] font-bold'>
+        <h1 className='text-primary text-[40px] leading-10 tracking-[-1.14px] font-bold md:text-[72px] md:leading-[72px] md:tracking-[-2.05px]'>
           Projects
         </h1>
         <ContactButton />
       </div>
-      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col gap-10 md:grid md:grid-rows-2 md:grid-cols-2 md:gap-x-6 md:gap-y-[60px]'>
         {projectsArray.map((project, index) => (
           <div key={index} className='flex flex-col gap-5'>
             <img
