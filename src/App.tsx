@@ -8,13 +8,13 @@ const App = () => {
   return (
     <div className='min-h-dvh overflow-hidden relative '>
       <Header />
-      <body className='px-4 mb-20 md:px-[30px]'>
+      <main className='px-4 mb-20 md:px-[30px]'>
         <div className='relative flex flex-col items-center z-10 gap-20'>
           <Introduction />
           <Skills />
           <Projects />
         </div>
-      </body>
+      </main>
       <Footer />
     </div>
   );
