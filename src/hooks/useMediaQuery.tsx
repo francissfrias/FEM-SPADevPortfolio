@@ -10,9 +10,9 @@ interface MediaQueryState {
 const useMediaQuery = (): MediaQueryState => {
   const [mediaQuery, setMediaQuery] = React.useState<MediaQueryState>({
     isMobile: window.innerWidth <= 375,
-    isTablet: window.innerWidth > 768 && window.innerWidth <= 1024,
-    isLaptop: window.innerWidth > 1024 && window.innerWidth <= 1440,
-    isDesktop: window.innerWidth > 1440,
+    isTablet: window.innerWidth > 768 && window.innerWidth <= 1279,
+    isLaptop: window.innerWidth > 1279 && window.innerWidth <= 1439,
+    isDesktop: window.innerWidth > 1439,
   });
 
   React.useEffect(() => {
@@ -21,18 +21,18 @@ const useMediaQuery = (): MediaQueryState => {
       setMediaQuery((prev) => {
         if (
           prev.isMobile === width <= 375 &&
-          prev.isTablet === (width > 768 && width <= 1024) &&
-          prev.isLaptop === (width > 1024 && width <= 1440) &&
-          prev.isDesktop === width > 1440
+          prev.isTablet === (width > 768 && width <= 1279) &&
+          prev.isLaptop === (width > 1279 && width <= 1439) &&
+          prev.isDesktop === width > 1439
         ) {
           return prev;
         }
 
         return {
           isMobile: width <= 375,
-          isTablet: width > 768 && width <= 1024,
-          isLaptop: width > 1024 && width <= 1440,
-          isDesktop: width > 1440,
+          isTablet: width > 768 && width <= 1279,
+          isLaptop: width > 1279 && width <= 1439,
+          isDesktop: width > 1439,
         };
       });
     };

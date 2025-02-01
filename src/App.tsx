@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div className='min-h-dvh overflow-hidden relative '>
       <Header />
-      <main className='px-4 mb-20 md:px-[30px]'>
-        <div className='relative flex flex-col items-center z-10 gap-20'>
+      <main className='px-4 mb-20 md:px-[30px] xl:px-[165px]'>
+        <div className='relative flex flex-col items-center z-10 gap-20 md:gap-[60px]  xl:gap-[140px]'>
           <Introduction />
           <Skills />
           <Projects />

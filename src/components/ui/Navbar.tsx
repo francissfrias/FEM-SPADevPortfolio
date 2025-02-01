@@ -8,13 +8,13 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        'flex flex-col items-center gap-5 py-5 px-24 text-primary md:flex-row md:justify-between md:items-center md:px-[30px] '
+        'flex flex-col items-center gap-5 py-5 px-24 text-primary md:flex-row md:justify-between md:items-center md:px-[30px] xl:px-[165px] '
       )}
     >
       <a className='font-bold text-medium md:text-[32px] md:leading-8 md:-tracking-[0.44px]'>
         adamkeyes
       </a>
-      <ul className='flex gap-[26px] justify-center items-center w-[9.624rem]  z-50'>
+      <ul className='flex gap-[26px] justify-center items-center w-[9.624rem] z-50 xl:mr-[30px]'>
         <li>
           <a>
             <img src={githubicon} className='md:min-w-[24.61px]' />
