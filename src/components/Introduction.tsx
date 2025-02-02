@@ -1,4 +1,3 @@
-import useMediaQuery from '../hooks/useMediaQuery';
 import { ContactButton } from './shared/ContactMeButton';
 import desktopProfilePicture from '/images/image-profile-desktop.webp';
 import mobileProfilePicture from '/images/image-profile-mobile.webp';
@@ -8,7 +7,6 @@ import circlePattern from '/images/pattern-circle.svg';
 import ringpattern from '/images/pattern-rings.svg';
 
 const Introduction = () => {
-  const { isDesktop } = useMediaQuery();
   return (
     <>
       <img
@@ -16,7 +14,7 @@ const Introduction = () => {
         src={ringpattern}
       />
       <img
-        className='absolute top-0 right-0 z-0 translate-x-1/2 translate-y-[8.25rem] md:z-10 md:translate-x-[80px] md:translate-y-[400px] '
+        className='absolute top-0 right-0 z-0 translate-x-1/2 translate-y-[8.25rem] md:z-10 md:translate-x-[80px] md:translate-y-[400px] xl:left-0 xl:translate-x-[600px]'
         src={circlePattern}
       />
       <img
@@ -25,7 +23,7 @@ const Introduction = () => {
       />
 
       <div className='relative flex flex-row  xl:w-full xl:mb-[120px] '>
-        <div className='flex flex-col items-center gap-6 md:mt-[70px] md:min-w-[445px] md:items-start md:justify-center md:z-40 md:gap-[60px] xl:min-w-[706px] xl:w-[706px] xl:gap-[66px]'>
+        <div className='flex flex-col items-center gap-6 md:mt-[70px] md:min-w-[445px] md:items-start md:justify-center md:z-40 md:gap-[60px] xl:min-w-[706px] xl:w-[706px] xl:gap-[66px] xl:mt-[126px]'>
           <h1 className='text-primary text-center text-[40px] font-bold tracking-[-1.14px] leading-10 md:text-[72px] md:leading-[72px] md:tracking-[-2.05px] md:text-left xl:text-[88px] xl:leading-[88px] xl:tracking-[-2.5px] xl:w-[706px]  '>
             Nice to <br className='hidden md:block xl:hidden' /> meet you!{' '}
             <br className='block md:hidden xl:hidden' />

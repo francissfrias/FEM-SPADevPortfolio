@@ -31,7 +31,7 @@ const skillsArray: {
 
 const Skills = () => {
   return (
-    <div className='relative flex flex-col items-center gap-6 py-10 border-y-2 border-secondary w-full md:grid md:grid-rows-3 md:grid-cols-2 md:gap-y-[52px] md:gap-x-[7px] md:border-b-0'>
+    <div className='relative flex flex-col items-center gap-6 py-10 border-y-2 border-secondary w-full md:grid md:grid-rows-3 md:grid-cols-2 md:gap-y-[52px] md:gap-x-[7px] md:border-b-0 xl:grid-rows-2 xl:grid-cols-3 xl:py-[72px]'>
       {skillsArray.map((skill, index) => (
         <div key={index} className='text-center md:text-left'>
           <h1 className='text-primary font-bold text-skillsTitle md:text-[48px] md:leading-[56px] md:tracking-[-1.5px]'>
@@ -43,7 +43,7 @@ const Skills = () => {
         </div>
       ))}
       <img
-        className='absolute bottom-0 left-0 z-0 translate-y-1/2 translate-x-1/2 md:translate-x-full'
+        className='absolute bottom-0 left-0 z-0 translate-y-1/2 translate-x-1/2 md:translate-x-[550px] md:translate-y-11 xl:left-auto xl:right-0  xl:translate-x-[450px]'
         src={ringpattern}
       />
     </div>
