@@ -1,28 +1,27 @@
-import * as z from 'zod';
 import { Button } from './ui/Button';
 import { Input } from './ui/Input';
 import Navbar from './ui/Navbar';
 import ringpattern from '/images/pattern-rings.svg';
 
-const messageForm = z.object({
-  name: z
-    .string({
-      required_error: 'Sorry, name is required',
-    })
-    .min(2, {
-      message: 'Sorry, name should be more than 2 letters',
-    }),
-  email: z.string().email({
-    message: 'Sorry, invalid email format here',
-  }),
-  message: z.string().optional(),
-});
+// const messageForm = z.object({
+//   name: z
+//     .string({
+//       required_error: 'Sorry, name is required',
+//     })
+//     .min(2, {
+//       message: 'Sorry, name should be more than 2 letters',
+//     }),
+//   email: z.string().email({
+//     message: 'Sorry, invalid email format here',
+//   }),
+//   message: z.string().optional(),
+// });
 
-const messageInitialState = {
-  name: '',
-  email: '',
-  message: '',
-};
+// const messageInitialState = {
+//   name: '',
+//   email: '',
+//   message: '',
+// };
 
 const Footer = () => {
   return (
