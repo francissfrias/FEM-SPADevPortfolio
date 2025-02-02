@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # Updated to latest
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -36,13 +36,15 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output
+        run: ls -l ./dist # Debug: Ensure the folder exists and has files
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
-      - name: Upload artifact (using v4)
-        uses: actions/upload-artifact@v4 # Force upgrade to v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: github-pages
           path: './dist'
 
       - name: Deploy to GitHub Pages
