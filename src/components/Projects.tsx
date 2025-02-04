@@ -71,14 +71,17 @@ const Projects = () => {
       </div>
       <div className='flex flex-col gap-10 md:grid md:grid-rows-2 md:grid-cols-2 md:gap-x-6 md:gap-y-[60px]'>
         {projectsArray.map((project, index) => (
-          <div key={index} className='flex flex-col gap-5'>
-            <img
-              src={isMobile ? project.mobileSrc : project.desktopSrc}
-              alt={project.title}
-              className='w-full  object-cover '
-              loading='lazy'
-              aria-labelledby='project-title'
-            />
+          <div key={index} className='relative flex flex-col gap-5 group'>
+            <div className='relative w-full  '>
+              <img
+                src={isMobile ? project.mobileSrc : project.desktopSrc}
+                alt={project.title}
+                className='w-full  object-cover   '
+                loading='lazy'
+                aria-labelledby='project-title'
+              />
+              <div className='hidden group-hover:xl:block group-hover:xl:absolute xl:inset-0 xl:bg-black  group-hover:xl:opacity-75 transition-opacity'></div>
+            </div>
             <h3
               className='text-medium tracking-normal text-primary font-bold uppercase'
               id='project-title'
@@ -95,7 +98,7 @@ const Projects = () => {
                 </li>
               ))}
             </ul>
-            <div className='flex gap-[34px]'>
+            <div className='flex gap-[34px] xl:hidden group-hover:xl:flex xl:h-full xl:w-full xl:absolute xl:z-10 xl:justify-center xl:items-center xl:flex-col xl:pb-20'>
               <Button className='w-fit'>View Project</Button>
               <Button>View Code</Button>
             </div>

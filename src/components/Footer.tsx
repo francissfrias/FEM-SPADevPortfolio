@@ -43,22 +43,25 @@ const Footer = () => {
 
   return (
     <footer className='bottom-0 w-full text-center py-[60px] bg-[#242424] text-primary  relative px-4 md:pb-4'>
-      <div className='flex flex-col gap-5 md:px-[146px] '>
+      <div className='flex flex-col gap-5 md:px-[146px] xl:flex-row xl:justify-between xl:items-stretch xl:gap-[220px]'>
         <img
           className='absolute  bottom-0 left-0 z-0 -translate-x-[11.75rem] -translate-y-[290px] md:-translate-y-[145px] md:-translate-x-[370px]  '
           src={ringpattern}
         />
-        <div className='flex flex-col gap-5 '>
+        <div className='flex flex-col gap-5 xl:justify-stretch xl:items-start xl:min-w-[445px]'>
           <h1 className='text-primary text-center text-[40px] leading-10 traking-[-1.14px] font-bold md:text-[72px] md:leading-[72px] md:tracking-[-2.05px]'>
             Contact
           </h1>
-          <p className='text-secondary text-pretty font-medium text-[16px] leading-[26px] tracking-normal'>
+          <p className='text-secondary text-pretty font-medium text-[16px] leading-[26px] tracking-normal xl:text-left xl:min-w-[445px]'>
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
           </p>
         </div>
-
-        <form {...form} onSubmit={form.handleSubmit(handleSubmit)}>
+        <form
+          {...form}
+          onSubmit={form.handleSubmit(handleSubmit)}
+          className='xl:min-w-[445px] xl:w-full'
+        >
           <div className='flex flex-col gap-8 '>
             <Input
               placeholder='Name'
